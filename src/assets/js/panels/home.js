@@ -9,7 +9,7 @@ const { shell, ipcRenderer } = require('electron')
 
 
 const RPC = require('discord-rpc');
-const clientId = '1256321602879226001';
+const clientId = '1194640013909045303';
 RPC.register(clientId);
 
 const rpc = new RPC.Client({ transport: 'ipc' });
