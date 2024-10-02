@@ -1,12 +1,12 @@
 {
     "name": "Nexuscraft-Launcher",
     "preductname": "Nexuscraft Launcher",
-    "version": "3.0.8",
+    "version": "3.0.9",
     "description": "Launcher Mincraft pour le serveur Nexuscraft Studio",
     "main": "src/app.js",
   "author": {
     "name": "luuxis, John-Nexuscraft, Inc.",
-    "email": "contact@nexuscraftrp.funr",
+    "email": "contact@nexuscraftrp.fun",
     "url": "https://github.com/Nexuscraft-Studio"
   },
     "url": "https://disto.nexuscraftrp.fun",
