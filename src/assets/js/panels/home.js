@@ -7,29 +7,6 @@ import { config, database, logger, changePanel, appdata, setStatus, pkg, popup }
 const { Launch } = require('minecraft-java-core')
 const { shell, ipcRenderer } = require('electron')
 
-
-const RPC = require('discord-rpc');
-const clientId = '1256321602879226001';
-RPC.register(clientId);
-
-const rpc = new RPC.Client({ transport: 'ipc' });
-
-rpc.on('ready', () => {
-    rpc.setActivity({
-        details: 'Sur Nexuscraft Launcher',
-        state: 'La légende raconte que il rejoin la Fondation',
-        startTimestamp: new Date(),
-        largeImageKey: 'asset1',
-        largeImageText: 'Launcher Nexuscraft',
-        smallImageKey: 'asset1',
-        instance: true,
-    });
-    
-    console.log('Rich Presence activé');
-});
-
-rpc.login({ clientId }).catch(console.error);
-
 class Home {
     static id = "home";
     async init(config) {
