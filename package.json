@@ -1,7 +1,7 @@
 {
     "name": "Nexuscraft-Launcher",
     "preductname": "Nexuscraft Launcher",
-    "version": "3.0.7",
+    "version": "2.1.7",
     "description": "Launcher Mincraft pour le serveur Nexuscraft Studio",
     "main": "src/app.js",
   "author": {
