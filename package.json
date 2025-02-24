@@ -11,14 +11,12 @@
     },
     "url": "https://disto.nexuscraft.fr",
     "scripts": {
-		"start": "electron .",
-		"start:debug": "electron --inspect=5858 .",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "electron-builder build --win --linux --mac",
-		"build:win": "electron-builder build --win",
-		"build:linux": "electron-builder build --linux",
-		"build:mac": "electron-builder build --mac",
-		"run": "electron ."
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
+        "build": "node build.js --obf=true --build=platform",
+        "icon": "node build.js --icon=https://nexuscraftrp.fun/storage/img/nexusv5.png",
+		"pre-build:mac": "electron-builder build --mac"
+    
     },
     "license": "CCANC",
     "nodemonConfig": {
